@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        img{
+            width: 100px; height: 100px;
+        }
+        #block img{
+            display: block;
+            margin: 10px;
+        }
+        li{
+            list-style-type: none;
+            display: inline-block;
+            margin: 20px;
+        }
+        .nonedisplay{  /* 요소를 보이지 않게, 공간도 사라짐 */
+            display: none;
+        }
+        .visi{
+            visibility: hidden;  /* 요소를 보이지 않게, 공간은 그대로 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>상품종류</li>
+            <li>구입처</li>
+            <li>정보확인</li>
+            <li>고객센터</li>
+        </ul>
+    </div>
+
+    <div class="nonedisplay">
+        <img src="kitten1.jpg" alt="이미지삽입">
+        <img src="kitten1.jpg" alt="이미지삽입">
+        <img src="kitten1.jpg" alt="이미지삽입">
+    </div>
+
+    <div id="block">
+        <img src="kitten1.jpg" alt="이미지삽입">
+        <img src="kitten1.jpg" alt="이미지삽입">
+        <img src="kitten1.jpg" alt="이미지삽입">
+    </div>
+</body>
+</html>

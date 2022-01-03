@@ -1,0 +1,19 @@
+* 입력 양식 태그
+- 데이터 전달 방식
+form 태그
+ 속성 : method 전송방식
+         - GET 방식 : 주소에 데이터 입력해서 전달 / 크기 한정
+         - POST 방식 : 주소 변경 없이 비밀스럽게 데이터 전달 / 크기 제한X
+         action 속성 장소에 데이터를 전달
+
+input 태그 : 박스 만듦  <input type="">
+ - text 글상자
+ - password 
+
+폼 양식과 요소를 연결
+
+* label 태그
+1) <label [속성="값"]> <input~> </label>
+  속성값 생략가능
+2) <label for="값">내용</label>
+   <input id="값" 속성="값">

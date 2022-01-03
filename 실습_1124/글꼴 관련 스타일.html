@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글꼴 관련 스타일</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Nanum+Myeongjo:wght@700&display=swap');
+        h1{
+            font-family: Comforter Brush, Nanum Myeongjo;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 800;
+            font-style: italic;
+            color:#ff0000;
+        }
+        .sfont{
+            font-variant: small-caps;
+        }
+        .underdeco{
+            text-decoration: underline;
+        }
+        .sdeco{
+            text-decoration: line-through;
+        }
+        .odeco{
+            text-decoration: overline;
+        }
+        .trans1{
+            text-transform: capitalize;
+        }
+        .trans2{
+            text-transform: uppercase;
+        }
+        .trans3{
+            text-transform: lowercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>font 글꼴 관련 스타일</h1>
+    <p>텍스트 스타일 중에 <span class="underdeco">글꼴</span>과 관련된 스타일이 있다.
+        글자들이 모여 이루어진 <span class="sdeco">텍스트</span>가 아닌 글자의 모양새를 바꿔준다.</p>
+   <span class="sfont">font-variant</span>는 글자를 작은 대문자로 작성한다.
+
+   <ul>
+       <li  class="trans1">html</li>
+       <li class="trans2">css</li>
+       <li class="trans3 odeco">JAVASCRIPT</li>
+   </ul>
+</body>
+</html>

@@ -1,0 +1,48 @@
+1. 블록 레벨 태그
+div
+p
+hn
+hr
+ul
+li
+fieldset
+address
+
+2. 인라인 레벨 태그
+span
+img
+a
+input
+textarea
+
+3. 화면 배치 방법
+display
+
+속성
+block) display:block;
+인라인 레벨 요소를 블록 레벨로 지정
+
+inline) display:inline;
+블록 레벨 요소를 인라인 레벨로 지정
+
+inline-block) display:inline-block;
+margin 값 등을 정확하게 인지
+
+none) display:none;
+해당 요소를 화면에 표시하지 않음
+공간도 같이 보이지 않음
+   visibility:hidden; : 화면에서 표시x, 공간은 그대로 유지
+
+
+
+
+
+
+
+
+
+
+
+
+
+

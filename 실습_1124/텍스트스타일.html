@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트스타일</title>
+    <style>
+        h1{
+            color: white;
+            word-spacing:0.2em;
+            letter-spacing: 0.5em;
+            text-shadow: 1px 1px 5px red, 3px 3px 5px yellow, 5px 5px 5px green, 7px 7px 5px blue, 9px 9px 5px purple;
+        }
+        .align-left{   /* 왼쪽정렬 */
+            text-align: left;
+        }
+        .align-right{  /* 오른쪽정렬 */
+            text-align: right;
+        }
+        .align-center{   /* 가운데정렬 */
+            text-align: center;
+        }
+        .align-justify{   /* 양쪽정렬 */
+            text-align:justify;
+        }
+        .textjustify{
+            text-justify: inter-word;
+        }
+        .s-line{
+            line-height: 0.7em;
+        }
+        .b-line{
+            line-height: 2em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>텍스트 그림자</h1>
+    <h2>문단 스타일 학습하기</h2>
+    <p class="align-center">문단 스타일</p>
+    <p class="align-left">문단 스타일</p>
+    <p class="align-right">문단 스타일</p>
+    <p class="align-justify textjustify">문단 스타일 문단 스타일문단 문단 스타일문단 스타일문단 스타일문단 스타일문단 스타일스타일문단 스타일문단 스타일문단 스타일문단 스타일문단 스타일문단 스타일문단 스타일문단 스타일문단 스타일문단 스타일문단 스타일</p>
+    <p>문단의 첫 줄을 넘어 두 줄 이상이 되면 '줄 간격'이 생깁니다. 그런데 줄 간격은 너무 좁으면 내용이 눈에 잘 들어오지 않습니다.</p>
+    <p class="s-line">문단의 첫 줄을 넘어 두 줄 이상이 되면 '줄 간격'이 생깁니다. 그런데 줄 간격은 너무 좁으면 내용이 눈에 잘 들어오지 않습니다.</p>
+    <p class="b-line">문단의 첫 줄을 넘어 두 줄 이상이 되면 '줄 간격'이 생깁니다. 그런데 줄 간격은 너무 좁으면 내용이 눈에 잘 들어오지 않습니다.</p>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input2</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>색선택</legend>
+            <label>선호색상
+                <input type="color" value="#00ff00">
+            </label>
+        </fieldset>
+
+        <h3>조회기간 선택</h3>
+        <label> 시작일
+            <input type="date">
+        </label> <br>
+        <label> 종료일
+            <input type="date">
+        </label>
+
+        <h3>시간 선택</h3>
+        <label> 시작시간
+            <input type="time" value="09:00">  <!--value로 기본값 설정 가능-->
+        </label> <br>
+        <label> 종료시간
+            <input type="time" value="18:00">
+        </label>
+
+        <h3>날짜와 시간 선택</h3>
+        <label> 시작 날짜와 시간
+            <input type="datetime-local" value="2021-11-23T09:00"> <!--value에 날짜 입력 후 T 넣고 시간 입력-->
+        </label> <br>
+        <label> 종료 날짜와 시간
+            <input type="datetime-local" value="2021-11-23T18:00">
+        </label>
+
+
+        <!--예제-->
+        <h1>상품 주문서</h1>
+
+        <fieldset>
+            <legend>개인 정보</legend>
+            <label>
+                이름 <input type="text" id="name" placeholder="여백없이 입력" autofocus required>
+                <!--길잡이 역할? placeholder  / 커서 생기게 autofocus / 필수(미작성시 오류메시지) required-->
+            </label> <br>
+            <label>
+                연락처 <input type="tel" id="number" value="010-1234-5678" readonly>  <!--전화번호는 tel  /  읽기만 가능한(수정불가) readonly-->
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>주문 날짜</legend>
+            <label>
+                주문날짜 <input type="date">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <label> 주소
+                <input type="text" size="40" required>
+            </label> <br>
+            <label> 전화번호
+                <input type="tel" required>
+            </label> <br>
+            <label> 메  모
+                <textarea cols="40" rows="5" placeholder="수량, 주소 상세 입력"></textarea>
+                <!-- cols 값은 글자수, rows는 줄  메모 칸을 그만큼 제공
+                텍스트가 cols 이상 입력되면 다음줄로 자동으로 내려가고
+                 rows 줄 이상 넘어가면 자동스크롤 생긴다-->
+
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>주문 정보</legend>
+            <input type="checkbox" name="coffee1" id="ga"> <label for="ga">과테말라 안티구아 (100g)</label>
+            <input type="number" name="number1" min="0" max="5" value="0">개 <br>
+
+            <input type="checkbox" name="coffee2" id="in"> <label for="in">인도네시아 만델링 (100g)</label>
+            <input type="number" name="number2"min="0" max="5" value="0">개 <br>
+
+            <input type="checkbox" name="coffee3" id="tam"> <label for="tam">탐라는도다(블렌딩) (100g)</label>
+            <input type="number" name="number3"min="0" max="5" value="0">개
+        </fieldset>
+
+        <input type="submit" value="주문하기">
+        <input type="reset" value="다시 작성">
+
+        <input type="file">
+        <br> <br>
+        <input type="image" src="http://placekitten.com/200/200"> <br>
+
+        <textarea>Textarea 태그</textarea>
+        <textarea>Textarea 태그
+Textarea 태그
+        </textarea>
+        <textarea>
+            Textarea 태그
+            Textarea 태그
+        </textarea>
+
+
+
+
+    </form>
+</body>
+</html>

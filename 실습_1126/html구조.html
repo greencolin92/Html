@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 구조</title>
+</head>
+<style>
+    .clear{
+        clear:both;
+    }
+    header{
+        width: 800px;
+        height: 60px;
+        border: 2px solid cornflowerblue;
+        margin: 2px;
+    }
+    #aside_left{
+        width: 174px;
+        height: 390px;
+        border: 2px solid cornflowerblue;
+        margin: 2px;
+        float: left;
+    }
+    #aside_right{
+        width: 174px;
+        height: 390px;
+        border: 2px solid cornflowerblue;
+        margin: 2px;
+        float: left;
+    }
+    nav{
+        height: 150px;    /* aside 안에서 자동으로 width 값 설정됨*/
+        margin: 2px;
+        border: 2px solid royalblue;
+    }
+    section{
+        width: 436px;
+        height: 390px;
+        margin: 2px;
+        border: 2px solid cornflowerblue;
+        float:left;
+    }
+    article{
+        /*width: 500px;*/
+        height: 150px;
+        margin: 2px;
+        border: 2px solid royalblue;
+    }
+    footer{
+        width: 800px;
+        height: 90px;
+        margin: 2px;
+        border: 2px solid cornflowerblue;
+    }
+</style>
+<body>
+    <header>
+        상단 메뉴
+    </header>
+    <aside id="aside_left">
+        좌측메뉴
+        <nav>
+            네비게이션
+        </nav>
+    </aside>
+    <section>
+        메인 콘텐츠
+        <article>콘텐츠1</article>
+        <article>콘텐츠2</article>
+    </section>
+    <aside id="aside_right">
+        우측메뉴
+        <nav>
+            네비게이션
+        </nav>
+    </aside>
+
+    <div class="clear"></div>
+    <footer>
+        하단
+    </footer>
+</body>
+</html>

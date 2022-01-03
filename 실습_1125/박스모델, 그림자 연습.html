@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델 연습</title>
+    <style>
+        /* p{
+            width:500px;
+            border: 1px solid forestgreen;
+        } */
+        #border1{
+            border-left: 2px solid red;
+            border-right: 2px solid blue;
+        }
+        #border2{
+            border-top: 2px solid green;
+            border-bottom: 2px solid yellow;
+        }
+        #border3{
+            border: 2px solid purple;
+            border-radius:15px ;
+        }
+        #border4{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border: 2px dotted hotpink;
+        }
+
+        #shadowbox1{
+            width: 200px;
+            height: 150px;
+            border: 2px solid tomato;
+            box-shadow: 6px 6px 10px green;
+            border-style: dashed;
+        }
+        #shadowbox2{
+            width: 200px;
+            height: 100px;
+            border:2px solid blue;
+            box-shadow: -6px -6px 7px orangered;
+            border-style:dotted;
+        }
+        #circle{
+            width: 100px;
+            height: 100px;
+            border: 1px solid brown;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <br>
+
+
+    <div id="shadowbox1">그림자 설정</div>
+    <br>
+    <div id="shadowbox2">그림자 반대로 설정</div>
+
+    <p id="border1">
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+    </p>
+
+    <p id="border2">
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+    </p>
+
+    <p id="border3">
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+    </p>
+    
+    <p id="border4">
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+        박스모델에는 컨텐츠, 패딩, 경계선, 마진 등으로 구별할 수 있다.
+    </p>
+</body>
+</html>

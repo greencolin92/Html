@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클래스 선택자 연습</title>
+    <style>
+        p{
+            color: darkgreen;
+        }
+        .redtext{
+            color: red;  /* redtext 클래스 글자색 red */
+        }
+        h2.accent{ /* h2태그에서만 적용가능한 class 스타일 */
+            background-color: darkslateblue;
+            color: floralwhite;
+        }
+        .browntext{
+            color: brown;
+        }
+        .boldtext{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="accent">클래스 선택자 연습</h2>
+    <p class="redtext">웹문서 내에서 특정 부분에만 스타일을 변경하고 싶을 때 사용할 수 있다.</p>
+    <p>클래스 명은 <span class="redtext">임의</span>로 지정할 수 있다.</p>  <!--텍스트 일부에만 class 스타일 적용 가능-->
+    <p>둘 이상의 클래스 <span class="browntext boldtext">스타일</span> 적용</p>  <!-- 두가지 클래스명을 차례로 작성-->
+
+    <ul>
+        <li class="redtext boldtext">사과</li>
+        <li class="boldtext">바나나</li>
+        <li class="redtext boldtext">오렌지</li>
+        <li class="boldtext">감</li>
+    </ul>
+</body>
+</html>
